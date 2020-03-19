@@ -40,12 +40,12 @@
     "rollup": "1.29.1",
     "rollup-plugin-commonjs": "10.1.0",
     "rollup-plugin-livereload": "1.0.4",
-    "rollup-plugin-postcss": "^2.0.3",
+    "rollup-plugin-postcss": "^2.5.0",
     "rollup-plugin-svelte": "5.1.1",
     "rollup-plugin-terser": "5.2.0",
-    "sass": "^1.24.0",
+    "sass": "^1.26.3",
     "sirv-cli": "0.4.5",
-    "stylelint": "^13.2.0",
+    "stylelint": "^13.2.1",
     "stylelint-config-sass-guidelines": "^7.0.0"
   },
   "dependencies": {
