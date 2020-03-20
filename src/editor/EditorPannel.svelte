@@ -1,5 +1,5 @@
 <script>
-  export let pannel_name = 'New Pannel';
+  export let name = 'New Pannel';
 </script>
 
 <style>
@@ -9,6 +9,6 @@
 </style>
 
 <div class="n_pannel">
-  <p>{pannel_name}</p>
+  <p>{name}</p>
   <slot />
 </div>
