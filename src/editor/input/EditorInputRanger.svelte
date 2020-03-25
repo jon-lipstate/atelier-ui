@@ -1,9 +1,9 @@
 <script>
-  export let val_min = null;
-  export let val_max = null;
+  export let val_min = 0;
+  export let val_max = 10;
 
   export let onclick;
-  export let UpdateEvent;
+  export let updateEvent;
 </script>
 
 <style>
@@ -28,4 +28,4 @@
   }
 </style>
 
-<input type="number" min={val_min} max={val_max} />
+<input type="number" min={val_min} max={val_max} on:click={onclick()} on:update={updateEvent()} />

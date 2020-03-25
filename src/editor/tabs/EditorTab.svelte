@@ -2,6 +2,8 @@
   import EditorButton from '../EditorButton.svelte';
   export let name;
   export let exitCall;
+
+  let usrHover = false;
 </script>
 
 <style>
@@ -14,6 +16,7 @@
   }
   p{
     padding:4px 12px;
+    text-overflow: "-";
   }
   * {
     margin: 0px;
@@ -30,11 +33,14 @@
     filter: brightness(0.7);
   }
 </style>
-
-<div class="tab">
+  
+<div on:mouseenter={usrHover = true} on:mouseleave={usrHover = false} class="tab">
   <svg class="icon" height="32" width="20">
     <circle cx="16" cy="16" r="4" />
   </svg>
   <p>{name}</p>
-  <EditorButton name="X" flat/>
+  {#if usrHover}
+    <EditorButton name=" X " flat/>
+    <img class="icon" src="svg/os_exit.svg" alt="">
+  {/if}
 </div>

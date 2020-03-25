@@ -1,7 +1,11 @@
 <script>
-  import EditorButton from './editor/EditorButton.svelte';
+  // Standard editor input, using this to standardize editor functions.
+  // NOTE : when extending the editor the standard input must be used so future 
+  // functions, plugins, styling will apply uniformly.
+  import EditorButton from './editor/input/EditorButton.svelte';
+  import EditorInputRanger from './editor/input/EditorInputRanger.svelte';
+
   import EditorPannel from './editor/EditorPannel.svelte';
-  import EditorInputRanger from './editor/EditorInputRanger.svelte';
   import EditorAppNav from './editor/EditorAppNav.svelte';
   import EditorDock from './editor/tabs/EditorDock.svelte';
   import EditorSpliter from './editor/EditorSplitter.svelte';
