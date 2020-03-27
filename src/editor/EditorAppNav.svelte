@@ -1,5 +1,5 @@
 <script>
-	import EditorButton from './EditorButton.svelte';
+	import EditorButton from './input/EditorButton.svelte';
 
 	export let entrys;
 
@@ -13,17 +13,18 @@
     box-shadow: none;
   }
 
-  .windowButton{
+  	.windowButton {
 		display: flex;
 		flex: row;
 		position: fixed;
+		height: 32px;
 		top: 0;
 		right: 0;
 		z-index: 10;
 	}
 
 	.os_button{
-		padding: 10px;
+		padding: 5px;
 		height: 20px;
 		width: 36px;
 		transition: 0.5s;
@@ -31,14 +32,16 @@
 	}
 
 	.os_button:hover{
-		background-color: #0f50c0;
+		background-color: rgba(255, 255, 255, 0.027);
+		filter: brightness(1.5);
 	}
 
 	.nav_buttons{
 		top: -1px;
 	}
 
-  .icon{
+	.icon{
+		height: 55%;
 		padding: 0px 10px;
 	}
 </style>
@@ -53,13 +56,14 @@
 		<div on:click={os_trigger_min} class="os_button">
 			<img class="icon" src="svg/os_min.svg" alt="">
 		</div>
-
+	
 		<div on:click={os_trigger_resize} class="os_button">
 			<img class="icon" src="svg/os_resize.svg" alt="">	
+
 		</div>
 
 		<div on:click={os_trigger_exit} class="os_button">
-			<img class="icon" src="public/svg/os_exit.svg" alt="">
+			<img class="icon" src="svg/os_exit.svg" alt="">
 		</div>
 	</div>
 

@@ -1,5 +1,5 @@
 <script>
-  import EditorButton from '../EditorButton.svelte';
+  import EditorButton from '../input/EditorButton.svelte';
   export let name;
   export let exitCall;
 

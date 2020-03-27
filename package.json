@@ -39,7 +39,7 @@
     "prettier-plugin-svelte": "^0.7.0",
     "rollup": "1.29.1",
     "rollup-plugin-commonjs": "10.1.0",
-    "rollup-plugin-livereload": "1.0.4",
+    "rollup-plugin-livereload": "^1.1.0",
     "rollup-plugin-postcss": "^2.5.0",
     "rollup-plugin-svelte": "5.1.1",
     "rollup-plugin-terser": "5.2.0",
@@ -49,6 +49,7 @@
     "stylelint-config-sass-guidelines": "^7.0.0"
   },
   "dependencies": {
+    "sirv": "^0.4.2",
     "svelte": "3.17.2",
     "yootils": "0.0.16"
   }
